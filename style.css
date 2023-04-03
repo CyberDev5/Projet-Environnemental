@@ -1,24 +1,324 @@
-* {
-    margin : 0;
-    padding : 0;
-    list-style : none;
-    text-decoration : none;
-    font-family: "poppins";
-    scroll-behavior : smooth;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-button {
-    font-family: "Torus Notched";
-}
-
 body {
-    overflow-x : hidden;
-    max-width: 1920px;
-    margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+
+
+/*
+ -- style typographiques --
+*/
+
+h1 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  /* ombre portée légère noire */
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  /* ombre portée légère noire */
+}
+
+button {
+  display: block;
+  text-align: center;
+  width: 250px;
+  height: 80px;
+  margin-bottom: 30px;
+  padding: 10px;
+  background-color: rgba(27, 221, 221, 0.767);
+  color: #fff;
+  font-weight: bold;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 1px;
+  font-size: xx-large;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+  /* ombre portée légère noire */
+}
+
+
+.section1 h1 {
+  font-size: 40px;
+}
+
+
+.section2 .IceSection2 img{
+  width: 100%;
+  position: relative;
+  transform: translateY(-30%);
+}
+
+.section2 h2{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* ombre portée légère noire */
+}
+
+.section2 h3{
+font-family: 'Bebas Neue', cursive;
+font-size: 30x;
+margin-bottom: 30px;
+text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* ombre portée légère noire */
+}
+
+.section2 p{
+font-size:18px;
+line-height:1.5;
+margin-bottom:22px;
+text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); /* ombre portée légère noire */
+}
+
+
+
+/*
+ -- GRID --
+*/
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "nav"
+    "section1"
+    "section2"
+    "section3"
+    "section4";
+}
+
+/*
+ -- NAV --
+*/
+.nav {
+  background-color: rgb(255, 255, 255);
+  grid-area: nav;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  /* Définir 3 colonnes avec le logo à gauche, le menu au centre et un espace à droite */
+  align-items: center;
+  /* Aligner verticalement les éléments au centre */
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  /* Aligner le contenu à gauche */
+  align-items: center;
+  /* Aligner verticalement le contenu au centre */
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* Centrer horizontalement le contenu */
+  align-items: center;
+  /* Aligner verticalement le contenu au centre */
+  list-style: none;
+  font-family: 'Lato', sans-serif;
+  color: rgba(0, 0, 0, 0.904);
+  font-weight: bold;
+}
+
+.menu li {
+  margin: 0.3rem;
+}
+
+/*
+ -- SECTION1 --
+*/
+
+
+.section1 {
+  grid-area: section1;
+  display: grid;
+}
+
+.content-section1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+/*
+ -- SECTION2--
+*/
+
+
+.section2 .IceSection2 img{
+  width: 100%;
+  overflow: hidden;
+}
+
+
+.section2{
+  width: 100%;
+  background-image: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0.541),rgba(0, 68, 255, 0.137),rgba(0, 89, 255, 0.473),  rgb(0, 68, 255), rgb(15, 55, 165), rgb(16, 41, 110), rgb(0, 0, 0), rgb(0, 0, 0));  
+}
+
+
+.content-section2{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.content-text-sect2{
+  justify-content: flex-start;
+  width: 45%;
+  height: 100%;
+  margin: 1rem;
+  background-color: rgba(255, 255, 255, 0.815);
+}
+
+.Img-Section2-CaveBearExploration{
+  justify-content: flex-end;
+  width: 35%;
+  margin: 5rem;
+}
+
+
+.Img-Section2-CaveBearExploration img{
+  width: 100%;
+}
+
+
+/*
+ -- SECTION3--
+*/
+.section3 {
+  grid-area: section3;
+}
+
+.section3{
+  width: 100%;
+  background-image: linear-gradient(to left, rgb(255, 255, 255), rgba(255, 255, 255, 0.541),rgba(0, 68, 255, 0.137),rgba(0, 89, 255, 0.473),  rgb(0, 68, 255), rgb(15, 55, 165), rgb(16, 41, 110), rgb(0, 0, 0), rgb(0, 0, 0));  
+}
+
+/*
+ -- SECTION4--
+*/
+.section4 {
+  background-color: rgb(250, 162, 0);
+  grid-area: section4;
+}
+
+
+
+/*
+ -- MEDIAS QUERIES --
+*/
+
+/*Ecran de bureau*/
+@media (min-width: 950px) {
+  .Img-Section1-Igloo {
+    display: none;
+  }
+
+  /* Les styles pour les écrans de bureau vont ici */
+  .section1 {
+    background-image: url(./ressources/img/13.png);
+    background-position: top right;
+    background-size: 600px 400px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 60vh;
+    grid-template-columns: 2fr 1fr;
+    margin-bottom: 5rem;
+  }
+
+}
+
+/*Ecran de tablettes*/
+@media (min-width: 768px) and (max-width: 950px) {
+  .section1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5rem;
+    width: 100%;
+    height: 60vh;
+  }
+
+  .section2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .content-section1 {
+    margin: 1rem;
+  }
+
+  .Img-Section2-CaveBearExploration{
+    justify-content: flex-end;
+    width: 50%;
+    margin: 5rem;
+  }
+  
+
+}
+
+/*Ecran de smartphone*/
+@media (max-width: 767px) {
+/*
+ -- GRID --
+*/
+
+  main {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 95%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .section2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .content-text-sect2{
+    justify-content: flex-start;
+    width: 100%;
+    margin: 1rem;
+    background-color: rgba(255, 255, 255, 0.815);
+  }
+  
+  .Img-Section2-CaveBearExploration{
+    justify-content: flex-end;
+    width: 100%;
+    margin: 5rem;
+  }
+  
+
 }

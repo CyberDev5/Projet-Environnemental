@@ -1,0 +1,127 @@
+
+
+/*
+ -- Polices d'écritures : Section 1 --
+*/
+.section1 h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* ombre portée légère noire */
+    background-color: rgba(255, 255, 255, 0.815);
+}
+
+.section1 p{
+    font-size:18px;
+    line-height:1.5;
+    margin-bottom:30px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); /* ombre portée légère noire */
+    background-color: rgba(255, 255, 255, 0.815);
+}
+
+.section1 button {
+    display: block;
+    text-align: center;
+    width: 250px;
+    height: 80px;
+    margin-bottom: 30px;
+    padding:10px;
+    background-color:rgba(27, 221, 221, 0.767) ;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+    font-size: xx-large;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8); /* ombre portée légère noire */
+}
+
+/*
+ --  BARRE DE NAVIGATION --
+*/
+
+.nav {
+    background-color: #ffffff;
+    color: #fff;
+    padding: 8px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); /* ombre portée légère noire */
+  }
+  
+
+/*
+ --  LOGO  --
+*/
+  .logo img{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+  }
+  
+/*
+ -- MENU 1 --
+*/
+
+.menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    color: rgba(0, 0, 0, 0.904);  
+    font-weight: bold;
+  }
+  
+  .menu li {
+    margin: 0.5rem;
+  }
+  
+  .menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+  }
+
+/*
+ -- SECTION 2 --
+*/
+
+.menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    color: rgba(0, 0, 0, 0.904);  
+    font-weight: bold;
+}
+
+/*
+ -- TABLETTES ET PC --
+background-image: url(./ressources/img/13.png);
+        background-size: 600px 400px; 
+        background-repeat: no-repeat;
+        background-position: top right;
+        
+        h1
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+        background-color: rgba(255, 255, 255, 0.815);
+*/
+
+/*
+ -- MEDIAS QUERIES --
+*/
+
+ /*Ecran de bureau*/
+@media (min-width: 992px) {
+    /* Les styles pour les écrans de bureau vont ici */
+  }
+
+/*Ecran de tablettes*/
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Les styles pour les tablettes vont ici */
+}
+
+/*Ecran de smartphone*/
+@media (max-width: 767px) {
+    /* Les styles pour les smartphones vont ici */
+}
+  
